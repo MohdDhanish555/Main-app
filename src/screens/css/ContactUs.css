@@ -1,0 +1,12 @@
+.contactus-container {
+    text-align: center;
+    padding: 1rem;
+}
+
+.contactus-container h1{
+    margin-bottom: 2rem;
+}
+
+.contactus-container p {
+    margin-top: 3.5rem;
+}

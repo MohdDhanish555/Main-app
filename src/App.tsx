@@ -1,25 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import Blogs from "./screens/Blogs";
+import ContactUs from "./screens/ContactUs";
+import Home from "./screens/Home";
 
 function App() {
+  const [homeText, sethomeText] = useState<string>("");
+  const [blogText, setblogText] = useState<string>("");
+  const [contactText, setcontactText] = useState<string>("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              value={homeText}
+              setValue={sethomeText}
+              label="Home Text Field"
+            />
+          }
+        />
+        <Route
+          path="/Blogs"
+          element={
+            <Blogs
+              value={blogText}
+              setValue={setblogText}
+              label="Blogs Text Field"
+            />
+          }
+        />
+        <Route
+          path="/ContactUs"
+          element={
+            <ContactUs
+              value={contactText}
+              setValue={setcontactText}
+              label="Contact Us Text Field"
+            />
+          }
+        />
+      </Routes>
+    </>
   );
 }
 

@@ -1,0 +1,15 @@
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    color: #fff  !important;
+}
+
+.css-1d1r5q-MuiFormHelperText-root {
+    color: rgba(215, 157, 50,0.3)!important;
+}
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+    color: rgba(215, 157, 50,0.55) !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: rgba(215, 157, 50,0.35) !important;
+}

@@ -1,0 +1,13 @@
+.blogs-container {
+    text-align: center;
+    padding: 1rem;
+}
+
+.blogs-container h1{
+    margin-bottom: 2rem;
+}
+
+.blogs-container p {
+    line-height: 1.5rem;
+    margin-top: 3.5rem;
+}
